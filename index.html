@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Promise Day Coupons for Aarti 💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 1.05em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.coupon {
+  background: white;
+  border-radius: 22px;
+  padding: 18px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+.emoji {
+  font-size: 2em;
+  margin-bottom: 8px;
+}
+
+.text {
+  margin-bottom: 14px;
+  font-size: 1em;
+}
+
+button {
+  background: #ff4d6d;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.95em;
+}
+
+button:hover {
+  background: #e63950;
+}
+
+.secret-box {
+  background: #111;
+  color: white;
+  padding: 25px;
+  margin: 30px 15px;
+  border-radius: 20px;
+  display: none;
+}
+
+input {
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  text-align: center;
+  width: 220px;
+  margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>💖 Promise Day Coupon Book 💖</h1>
+<div class="subtitle">
+  For my favourite human — <b>Aarti</b> 🥹💞  
+  <br>Redeem anytime. No expiry. No excuses 😌
+</div>
+
+<!-- NORMAL COUPONS -->
+<div class="container">
+
+  <div class="coupon">
+    <div class="emoji">🫂</div>
+    <div class="text">Unlimited hugs day (no questions asked)</div>
+    <button onclick="redeem()">Redeem 🤗</button>
+  </div>
+
+  <div class="coupon">
+    <div class="emoji">💬</div>
+    <div class="text">I promise to listen without interrupting</div>
+    <button onclick="redeem()">Redeem 👂</button>
+  </div>
+
+  <div class="coupon">
+    <div class="emoji">🍫</div>
+    <div class="text">Your favorite snack — my treat</div>
+    <button onclick="redeem()">Redeem 😋</button>
+  </div>
+
+  <div class="coupon">
+    <div class="emoji">🎶</div>
+    <div class="text">You control the playlist for the day</div>
+    <button onclick="redeem()">Redeem 🎧</button>
+  </div>
+
+  <div class="coupon">
+    <div class="emoji">🎬</div>
+    <div class="text">I’ll watch your show without complaining</div>
+    <button onclick="redeem()">Redeem 🍿</button>
+  </div>
+
+  <div class="coupon">
+    <div class="emoji">🐼</div>
+    <div class="text">Annoying lofad voice immunity pass</div>
+    <button onclick="redeem()">Redeem 😛</button>
+  </div>
+
+  <div class="coupon">
+    <div class="emoji">😜</div>
+    <div class="text">One argument-free day coupon</div>
+    <button onclick="redeem()">Redeem ✌️</button>
+  </div>
+
+  <div class="coupon">
+    <div class="emoji">🧠</div>
+    <div class="text">Mental health day — no pressure, just comfort</div>
+    <button onclick="redeem()">Redeem 🫶</button>
+  </div>
+
+  <div class="coupon">
+    <div class="emoji">🌧️</div>
+    <div class="text">Bad day rescue (rant + comfort combo)</div>
+    <button onclick="redeem()">Redeem ☕</button>
+  </div>
+
+  <div class="coupon">
+    <div class="emoji">😏</div>
+    <div class="text">One guilt-free cuddle session</div>
+    <button onclick="redeem()">Redeem 🛌</button>
+  </div>
+
+  <div class="coupon">
+    <div class="emoji">💃</div>
+    <div class="text">You choose my outfit for a day</div>
+    <button onclick="redeem()">Redeem 👕</button>
+  </div>
+
+</div>
+
+<!-- SECRET SECTION -->
+<h2>🔐 Secret Coupons (Adults Only 😏)</h2>
+<p>
+  Password hint:
+  <i>Names of my 2 favourite body parts. No spaces. Starts with B and R.</i>
+</p>
+
+<input type="password" id="password" placeholder="Enter password">
+<br><br>
+<button onclick="unlock()">Unlock 🔥</button>
+
+<div class="secret-box" id="secretBox">
+  <h2>🔥 Private Coupons for Aarti 🔥</h2>
+
+  <div class="coupon">
+    <div class="emoji">😈</div>
+    <div class="text">
+      Unlimited touch & pleasure session (toys included 😏)
+    </div>
+    <button onclick="redeemSecret()">Redeem 😏</button>
+  </div>
+
+  <div class="coupon">
+    <div class="emoji">🔒</div>
+    <div class="text">
+      Lock me up for the day — I’m yours, fully obedient
+    </div>
+    <button onclick="redeemSecret()">Redeem 😌</button>
+  </div>
+
+  <div class="coupon">
+    <div class="emoji">💆</div>
+    <div class="text">
+      Slow, deep, stress-melting massage (no timer)
+    </div>
+    <button onclick="redeemSecret()">Redeem 🕯️</button>
+  </div>
+
+  <div class="coupon">
+    <div class="emoji">🔥</div>
+    <div class="text">
+      One wild fantasy night — your rules, your choice
+    </div>
+    <button onclick="redeemSecret()">Redeem 😈</button>
+  </div>
+</div>
+
+<script>
+function redeem() {
+  alert("💖 Coupon redeemed!\nPromise activated immediately 😌");
+}
+
+function redeemSecret() {
+  alert("🔥 Secret coupon redeemed!\nPrivacy mode ON 😏");
+}
+
+function unlock() {
+  const pwd = document.getElementById("password").value;
+  if (pwd === "bexyroxy") {
+    document.getElementById("secretBox").style.display = "block";
+    alert("😈 Access granted.\nBehave… or don’t 😏");
+  } else {
+    alert("❌ Wrong password.\nThink favourite body parts 😉");
+  }
+}
+</script>
+
+</body>
+</html>
